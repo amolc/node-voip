@@ -1,0 +1,139 @@
+<div id="content" ng-controller="CartProductList">
+<side-menus>
+<pane side-menu-content>
+<div class="bar bar-header bar-dark" ng-controller="HomeController">
+	<button class="button button-icon icon ion-navicon-round" ng-click="openLeft()"></button>
+	<div class="logo"> Gnossem </div> 
+</div>
+<div class="bar bar-subheader bar-gray">
+   <div class="btn_help"> <a href=""> <img src="img/help_btn.png" /> </a> </div>
+   <h1 class="title header_title" style="margin: 0 auto;">My Cart</h1>
+    <div class="btn_edit"> <a href="" > <img src="img/edit_btn.png" /> </a> </div>
+</div>
+<content has-header="true" has-tabs="true" has-subheader="true">	
+	<div class="bags_page" >
+    	<ul class="list">
+		     <a > 
+	          <div class="cart_main">
+		       <div class="cart_inner">
+		        <div class="bag_1_cart"> <img  src="http://images.gnossem.com/components/com_virtuemart/shop_image/product/{{cproduct.product_full_image}}" /> </div>
+		        <div class="bag_1_detail">
+		          <div class="bag_name"> {{cproduct.product_name}} </div>
+		          <div class="bag_price">$ {{cproduct.product_price}}</div>
+		        </div>
+		      </div>
+		      <div class="clear"></div>
+		     </div>
+	         </a>       
+		   
+		</ul>
+	</div>
+	<div class="total_amount">
+       <p class="total"> Total : $ {{cproduct.product_price}} </p>
+       <p class="exclusive">(exclusive poosible duties & shipping)</p>
+     </div>
+     <div class="total_amount_btn" ng-controller="HomeController">
+       <div class="continue_shopping_btn"> <a href=""> <img src="img/continue_shopping_btn.png" /></a>  </div>
+       <div class="purchased_now_btn" ng-click="goPage('thanks')"> <img src="img/purchased_now_btn.png" /> </div>
+     </div>
+    <div class="clear"></div>
+</content>
+<div class="tabs tabs-icon-top bar-dark" style="background: #444444">
+  <ul class="footer">
+	<li>
+		<a >
+		<img src="img/about_btn.png">
+		</a>
+	</li>
+	<li>
+		<a >
+		<img src="img/shop_new_btn.png">
+		</a>
+	</li>
+	<li>
+		<a >
+		<img src="img/shop_premium_btn.png">
+		</a>
+	</li>
+</ul>
+</div>
+
+</pane>
+<side-menu side="left">
+          <content >
+            <div class="menu_bg">
+    <div class="menu_inner">
+      <ul>
+        <a ng-click="goPage('home')">
+        <li>
+          <div class="home_icon"><img src="img/home_icon.png" /></div>
+          <div class="home"> HOME </div>
+        </li>
+        </a>
+        <a >
+        <li>
+          <div class="home_icon"><img src="img/new_icon.png" /></div>
+          <div class="home"> New </div>
+        </li>
+        </a>
+        <a >
+        <li>
+          <div class="home_icon"><img src="img/designer_icon.png" /></div>
+          <div class="home"> designer </div>
+        </li>
+        </a>
+        <a ng-click='goPage(14)'>
+        <li>
+          <div class="home_icon"><img src="img/women_icon.png" /></div>
+          <div class="home"> women </div>
+        </li>
+        </a>
+        <a ng-click='goPage(39)'>
+        <li>
+          <div class="home_icon"><img src="img/bags_icon.png" /></div>
+          <div class="home"> bags </div>
+        </li>
+        </a>
+        <a ng-click='goPage(80)'>
+        <li>
+          <div class="home_icon"><img src="img/shoes_icon.png" /></div>
+          <div class="home"> shoes </div>
+        </li>
+        </a>
+        <a ng-click='goPage(32)'>
+        <li>
+          <div class="home_icon"><img src="img/accessories_icon.png" /></div>
+          <div class="home"> Accesories </div>
+        </li>
+        </a>
+        <a ng-click='goPage(13)'>
+        <li>
+          <div class="home_icon"><img src="img/man_icon.png" /></div>
+          <div class="home"> men </div>
+        </li>
+        </a>
+        <a >
+        <li>
+          <div class="home_icon"><img src="img/designer_icon.png" /></div>
+          <div class="home"> style </div>
+        </li>
+        </a>
+        <a >
+        <li>
+          <div class="home_icon"><img src="img/sale_icon.png" /></div>
+          <div class="home"> sale </div>
+        </li>
+        </a>
+        <a >
+        <li>
+          <div class="home_icon"><img src="img/search_icon.png" /></div>
+          <div class="home"> search </div>
+        </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+  </content>
+</side-menu>
+</side-menus>
+</div>

@@ -1,0 +1,151 @@
+<div id="content"  ng-controller="HomeController">
+		<side-menus >
+		<div ng-controller="ProductDetailController" >
+			<pane side-menu-content>
+				<div class="bar bar-header bar-dark" >
+					<button class="button button-icon icon ion-navicon-round" ng-click="openLeft()"></button>
+					<div class="logo">
+						Gnossem
+					</div>
+					<div class="cart_wishlist"  ng-controller="CartController">
+						<div class="cart_btn">
+							<button class="button button-icon icon ion-ios7-cart" ng-click="addToCartList(productDetail)"></button>
+						</div>
+						<div class="wishlist_btn">
+							<button class="button button-icon icon ion-heart" ng-click="addToWishList(productDetail)"></button>
+						</div>
+					</div>
+				</div>
+				<content has-header="true" has-tabs="true" >
+					<div class="product_detail_img" >
+						<div class="product_image_1">
+							<img  alt="img/product_loading.gif" src="http://images.gnossem.com/components/com_virtuemart/shop_image/product/{{productDetail.product_full_image}}" />
+						</div>
+						<div class="clear"></div>
+						<div class="product_name_1">
+							<p class="product_detail_grey">
+								{{productDetail.product_name}}
+							</p>
+							<p class="product_detail_grey_1">
+								$ {{productDetail.product_price}}
+							</p>
+						</div>
+					</div>
+				</content>
+
+	<div class="tabs tabs-icon-top bar-dark" style="background: #444444">
+		<ul class="footer">
+			<li>
+				<a > <img src="img/about_btn.png"> </a>
+			</li>
+			<li>
+				<a > <img src="img/shop_new_btn.png"> </a>
+			</li>
+			<li>
+				<a > <img src="img/shop_premium_btn.png"> </a>
+			</li>
+		</ul>
+	</div>
+
+	</pane>
+	<side-menu side="left">
+		<content >
+			<div class="menu_bg">
+				<div class="menu_inner">
+					<ul>
+						<a ng-click="goPage('home')">
+						<li>
+							<div class="home_icon"><img src="img/home_icon.png" />
+							</div>
+							<div class="home">
+								HOME
+							</div>
+						</li> </a>
+						<a >
+						<li>
+							<div class="home_icon"><img src="img/new_icon.png" />
+							</div>
+							<div class="home">
+								New
+							</div>
+						</li> </a>
+						<a >
+						<li>
+							<div class="home_icon"><img src="img/designer_icon.png" />
+							</div>
+							<div class="home">
+								designer
+							</div>
+						</li> </a>
+						<a ng-click='goPage(14)'>
+						<li>
+							<div class="home_icon"><img src="img/women_icon.png" />
+							</div>
+							<div class="home">
+								women
+							</div>
+						</li> </a>
+						<a ng-click='goPage(39)'>
+						<li>
+							<div class="home_icon"><img src="img/bags_icon.png" />
+							</div>
+							<div class="home">
+								bags
+							</div>
+						</li> </a>
+						<a ng-click='goPage(80)'>
+						<li>
+							<div class="home_icon"><img src="img/shoes_icon.png" />
+							</div>
+							<div class="home">
+								shoes
+							</div>
+						</li> </a>
+						<a ng-click='goPage(32)'>
+						<li>
+							<div class="home_icon"><img src="img/accessories_icon.png" />
+							</div>
+							<div class="home">
+								Accesories
+							</div>
+						</li> </a>
+						<a ng-click='goPage(13)'>
+						<li>
+							<div class="home_icon"><img src="img/man_icon.png" />
+							</div>
+							<div class="home">
+								men
+							</div>
+						</li> </a>
+						<a >
+						<li>
+							<div class="home_icon"><img src="img/designer_icon.png" />
+							</div>
+							<div class="home">
+								style
+							</div>
+						</li> </a>
+						<a >
+						<li>
+							<div class="home_icon"><img src="img/sale_icon.png" />
+							</div>
+							<div class="home">
+								sale
+							</div>
+						</li> </a>
+						<a >
+						<li>
+							<div class="home_icon"><img src="img/search_icon.png" />
+							</div>
+							<div class="home">
+								search
+							</div>
+						</li> </a>
+					</ul>
+				</div>
+			</div>
+		</content>
+	</side-menu>
+	</div>
+	</side-menus>
+</div>

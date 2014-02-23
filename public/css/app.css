@@ -1,0 +1,450 @@
+/* Your app's CSS, go crazy, make it your own */
+@font-face {
+    font-family: 'century_gothicregular';
+    src: url('fonts/gothic_0-webfont.eot');
+    src: url('fonts/gothic_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothic_0-webfont.woff') format('woff'),
+         url('fonts/gothic_0-webfont.ttf') format('truetype'),
+         url('fonts/gothic_0-webfont.svg#century_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 60%;
+}
+
+.ionic-logo img{
+	background-size:100% 100%;
+	width:100%;
+
+}
+.details {
+    padding: 0px 12px 20px 12px;
+}
+
+.details img {
+    float: left;
+    margin-right: 12px;
+}
+
+.list {
+    clear: both;
+}
+
+/* ☺ ------------------------- ☺ Home Contant Start ☺ ------------------------- ☺ */
+.contant_wrapper {
+	width:100%;
+	float: left;
+	padding-bottom: 0.75%;
+	margin-top: 1.5%;
+	background:#222;
+}
+.women {
+	width:100%;
+}
+.women img {
+	width:100%;
+	background-size:100% 100%;
+}
+.bags_shoes {
+	width:100%;
+	padding-top:0.5%;
+}
+.bags {
+	float:left;
+	width:39.1%;
+}
+.bags img {
+	width:100%;
+	background-size:100% 100%;
+}
+.shoes {
+	float:right;
+	width:60.5%;
+}
+.shoes img {
+	width:100%;
+	background-size:100% 100%;
+}
+.accessories_men {
+	width:100%;
+	padding-top:0.5%;
+}
+.accessories {
+	width:59.98%;
+	float:left;
+}
+.accessories img {
+	width:100%;
+	background-size:100% 100%;
+}
+.men {
+	float:right;
+	width:39.665%;
+}
+.men img {
+	width:100%;
+	background-size:100% 100%;
+}
+.dresses {
+	width:100%;
+	padding-top:0.5%;
+	float:left;
+}
+.dresses img {
+	width:100%;
+	background-size:100% 100%;
+}
+.rings_scarves {
+	float:left;
+	width:100%;
+	padding-top:0.5%;
+}
+.rings {
+	float:left;
+	width:39.1%;
+}
+.rings img {
+	width:100%;
+	background-size:100% 100%;
+}
+.scarves {
+	float:right;
+	width:60.49%;
+}
+.scarves img {
+	width:100%;
+	background-size:100% 100%;
+}
+/* ☺ ------------------------- ☺ Home Contant End  ☺ ------------------------- ☺ */
+
+
+
+/* ☺ ------------------------- ☺  Product Start  ☺ ------------------------- ☺ */
+.bags_page {
+	width:100%;
+	padding-top:0%;
+}
+.bags_page ul {
+}
+.bags_page ul li {
+	float: left;
+   	margin-top: 30px;
+    padding-right: 1%;
+   	width: 49%;
+}
+.bags-name {
+	 font-family: 'Arial';
+    height: 30px;
+    text-align: center;
+    width: 100%;
+}
+.first_bag {
+}
+.first_bag {
+	width: 100%;
+}
+.first_bag img {
+	width:100%;
+	background-size:100% 100%;
+}
+.grey_color {
+	font-size:12px;
+	font-weight: bold;
+	color:#565656;
+}
+.black_color {
+	color:#000000;
+	font-size:13px;
+	font-weight: bold;
+}
+/* ☺ ------------------------- ☺ Product End  ☺ ------------------------- ☺ */
+
+
+.whats_new_btn {
+	background: #545454; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU0NTQ1NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iIzU0NTQ1NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #545454 0%, #545454 49%, #000000 50%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#545454), color-stop(49%,#545454), color-stop(50%,#000000), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #545454 0%,#545454 49%,#000000 50%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #545454 0%,#545454 49%,#000000 50%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #545454 0%,#545454 49%,#000000 50%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #545454 0%,#545454 49%,#000000 50%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545454', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+	border-radius:5px;
+	width:49%;
+	height: 34px;
+	cursor:pointer;
+	float:left;
+}
+.whats_new_btn p {
+	font-family: 'century_gothicregular';
+	font-size: 17px;
+	text-align:center;
+	color:#fff;
+	line-height: 2;
+}
+.designer_az_btn {
+	background: #545454; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU0NTQ1NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iIzU0NTQ1NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #545454 0%, #545454 49%, #000000 50%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#545454), color-stop(49%,#545454), color-stop(50%,#000000), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #545454 0%,#545454 49%,#000000 50%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #545454 0%,#545454 49%,#000000 50%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #545454 0%,#545454 49%,#000000 50%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #545454 0%,#545454 49%,#000000 50%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545454', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+	border-radius:5px;
+	width:49%;
+	height: 34px;
+	cursor:pointer;
+	float:right;
+}
+.designer_az_btn p {
+	font-family: 'century_gothicregular';
+	font-size: 17px;
+	text-align:center;
+	color:#fff;
+	line-height: 2;
+}
+.footer  li {
+	float:left;
+	padding-top: 2px;
+	width: 33%
+}
+.footer li:hover {
+	background:#262626;
+}
+.logo {
+	font-family: 'century_gothicregular';
+	font-size: 20px;
+	text-transform:uppercase;
+	color:#f7f3f7;
+	letter-spacing:4px;
+	padding-left:3%;
+	line-height:1.8;
+	width: 45%
+}
+/***************************************************/
+.menu_inner {
+
+}
+.menu_inner ul {
+
+}
+.menu_inner ul li {
+	padding-left: 3%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #afafaf;
+}
+.home_icon {
+	float: left;
+	width: 17%;
+}
+.home_icon img {
+	width: 100%;
+	background-size: 100% 100%;
+}
+.home {
+	float: left;
+	font-size: 20px;
+	font-family: 'Arial';
+	color: #000000;
+	line-height: 36px;
+	padding-left: 3%;
+	text-transform: uppercase;
+}
+
+.cart_wishlist {
+    float: right;
+    width: 40%;
+}
+.cart_btn {
+      float:right;
+}
+.wishlist_btn {
+      float:right;
+}
+
+/* ☺ ------------------------- ☺ Product Detail Start ☺ ------------------------- ☺ */
+.product_detail_img {
+	width:100%;
+	margin:0 auto;
+	margin-top:3%;
+	border-bottom: 1px solid #EEEEEE;
+}
+.product_image_1 {
+	width:85%;
+	margin:0 auto;
+}
+.product_image_1 img {
+	width:100%;
+	background-size:100% 100%;
+}
+.product_name_1 {
+	font-family: 'Arial';
+	width: 100%;
+	padding-top:5%;
+	float:left; 
+	padding-bottom: 10%;
+	
+}
+.product_detail_grey {
+	color:#4f4f4f;
+	font-size:15px;
+	text-align:center;
+}
+.product_detail_grey_1 {
+	color:#4f4f4f;
+	font-size:25px;
+	padding-top:2%;
+	text-align:center;
+}
+.btn_help {
+	float: left;
+	width: 56px;
+	cursor: pointer;
+}
+.btn_help img {
+	width:100%;
+	background-size:100% 100%;
+}
+
+.btn_edit{
+	float: right;
+	width: 56px;
+	cursor: pointer;
+}
+.btn_edit img{
+	width:100%;
+	background-size:100% 100%;
+}
+/* ☺ ------------------------- ☺ Product Detail End ☺ ------------------------- ☺ */
+
+
+/* ☺ ------------------------- ☺ Cart Page Start ☺ ------------------------- ☺ */
+.cart_main {
+	width: 100%;
+	margin:0 auto;
+	border-bottom: 1px solid #EEEEEE;
+}
+.cart_inner {
+	float:left;
+	width:100%;
+}
+.bag_1_cart {
+	float: left;
+    padding: 3%;
+    width: 50%;
+}
+.bag_1_cart img {
+	width:100%;
+	background-size:100% 100%;
+}
+.bag_1_detail {
+	float: left;
+    font-family: 'Arial';
+    font-size: 12px;
+    padding-left: 7%;
+    padding-top: 12%;
+    width: 50%;
+}
+.bag_name {
+	width:100%;
+	text-align:left;
+}
+.bag_price {
+	width:100%;
+	text-align:left;
+	font-size: 16px;
+	 padding-top: 5%;
+}
+.total_amount {
+	font-family: 'Arial';
+}
+.total {
+	color:#000;
+	font-size:20px;
+	padding-top:8%;
+	text-align:center;
+	text-transform:uppercase;
+}
+.exclusive {
+	color:#ababab;
+	font-size:11px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.total_amount_btn {
+	width:90%;
+	margin:0 auto;
+	margin-top:3%;
+}
+.continue_shopping_btn {
+	width:48%;
+	float:left;
+	padding-left:1%;
+	padding-right:1%;
+}
+.continue_shopping_btn img {
+	width:100%;
+	background-size:100% 100%;
+}
+.purchased_now_btn {
+	width:48%;
+	float:right;
+	padding-left:1%;
+	padding-right:1%;
+	cursor: pointer;
+}
+.purchased_now_btn img {
+	width:100%;
+	background-size:100% 100%;
+}
+.header_title{
+	font-family: 'century_gothicregular';
+	color: #ffffff; 
+	width: 60%; 
+}
+
+/* ☺ ------------------------- ☺ Cart Page End ☺ ------------------------- ☺ */
+
+
+/* ☺ ------------------------- ☺ Registered Successfully Start ☺ ------------------------- ☺ */
+.registered_successfully {
+	text-align:center;
+	font-family: 'century_gothicregular';
+	font-size: 20px;
+}
+.icons {
+	width:100%;
+	margin:0 auto;
+	margin-top:5%;
+}
+.round_tick {
+	width:25%;
+	margin:0 auto;
+}
+.round_tick img {
+	width:100%;
+	background-size:100% 100%;
+}
+.go_arrow {
+	cursor:pointer;
+	width:40%;
+	margin:0 auto;
+	margin-top:5%;
+}
+.go_arrow img {
+	width:100%;
+	background-size:100% 100%;
+}
+/* ☺ ------------------------- ☺ Registered Successfully End ☺ ------------------------- ☺ */

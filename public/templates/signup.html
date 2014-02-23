@@ -1,0 +1,32 @@
+<content >	
+<div class="main_wrapper">
+	<div class="login_main" ng-controller="Signup">
+		<div class="ionic-logo">
+			<img src="img/login_logo.png" />
+		</div>
+		<div class="login">
+			<form name="myForm">
+			<div class="list">
+			  <label class="item item-input">
+			    <span class="input-label">Full Name</span>
+			    <input type="text" ng-model="user.name">
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Email</span>
+			    <input type="text" ng-model="user.email" >
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Password</span>
+			    <input type="password" ng-model="user.passwordp" >
+			  </label>
+			</div>
+			<div class="padding">
+        		<button class="button button-block button-yellow" style="color: #000" ng-click="signup(user)">SignUp</button>
+        		<button class="button button-block button-yellow" style="color: #000" ng-click="cancel()">Cancel</button>
+      		</div>
+			</form>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+</content>
