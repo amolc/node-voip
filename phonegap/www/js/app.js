@@ -13,12 +13,32 @@ angular.module('directory', ['ionic', 'directory.services', 'directory.controlle
         // Set up the various states which the app can be in.
         // Each state's controller can be found in controllers.js
         $stateProvider
-
+			.state('voip-index', {
+                url: '/voip',
+                templateUrl: 'templates/voip-index.html',
+                controller: 'VoipIndexCtrl'
+            })
+            .state('voip-login', {
+                url: '/voip-login',
+                templateUrl: 'templates/voip-login.html',
+                controller: 'VoipLoginCtrl'
+            })
+			.state('voip-dialer', {
+                url: '/voip-dialer',
+                templateUrl: 'templates/voip-dialer.html',
+                controller: 'VoipDialerCtrl'
+            })
+            .state('voip-settings', {
+                url: '/voip-settings',
+                templateUrl: 'templates/voip-settings.html',
+                controller: 'VoipSettingsCtrl'
+            })
             .state('employee-index', {
                 url: '/employees',
                 templateUrl: 'templates/employee-index.html',
                 controller: 'EmployeeIndexCtrl'
             })
+            
 
             .state('employee-detail', {
                 url: '/employee/:employeeId',
@@ -33,6 +53,6 @@ angular.module('directory', ['ionic', 'directory.services', 'directory.controlle
             });
 
         // if none of the above states are matched, use this as the fallback
-        $urlRouterProvider.otherwise('/employees');
+        $urlRouterProvider.otherwise('/voip');
 
     });

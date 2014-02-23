@@ -1,5 +1,28 @@
 angular.module('directory.controllers', [])
 
+	
+    
+     .controller('VoipIndexCtrl', function ($scope, $stateParams, EmployeeService) {
+        EmployeeService.findById($stateParams.employeeId).then(function(employee) {
+            $scope.employee = employee;
+        });
+    })
+     .controller('VoipLoginCtrl', function ($scope, $stateParams, EmployeeService) {
+        EmployeeService.findById($stateParams.employeeId).then(function(employee) {
+            $scope.employee = employee;
+        });
+    })
+     .controller('VoipDialerCtrl', function ($scope, $stateParams, EmployeeService) {
+        EmployeeService.findById($stateParams.employeeId).then(function(employee) {
+            $scope.employee = employee;
+        });
+    })
+     .controller('VoipSettingsCtrl', function ($scope, $stateParams, EmployeeService) {
+        EmployeeService.findById($stateParams.employeeId).then(function(employee) {
+            $scope.employee = employee;
+        });
+    })
+    
     .controller('EmployeeIndexCtrl', function ($scope, EmployeeService) {
 
         $scope.searchKey = "";
