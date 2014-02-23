@@ -10,7 +10,7 @@ var express = require('express'),
     
 var app = express();
 app.use(express.bodyParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'phonegap/www')));
 
 app.get('/api/employees/:id/reports', employees.findByManager);
 app.get('/api/employees/:id', employees.findById);
